@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" dir="itr">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="LAVANYA" />
+		<meta name="description" content="iiit,Nuzvid"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style type="text/css">
+           
+            /* body{
+                font-family: montserrat;
+            } */
+            /* body{
+                background-color: darkcyan;
+            } */
+
+            *{
+                padding:0;
+                margin:0;
+              } 
+              body {background:blanchedalmond;}
+h1, h2, h3, h4, h5 {
+  border-bottom: 1px solid rgb(192, 131, 131);
+  color: #060607;
+  padding-bottom: 8px
+}
+.container {
+  margin: auto;
+  width: 350px;
+  text-align: center;
+}
+.listFlex {display: flex; justify-content: center;}
+
+img {
+  width: 80%;
+}  
+/* #div1
+{
+  background-color:pink;
+  width:24%;
+  float:left;
+  height:530px;
+  padding-left:3px;
+}  */
+
+            /* div{
+                height: 70px;
+                width:100;
+                background:green;
+            }
+            label.logo{
+                font-size: 35px;
+                font-weight: bold;
+                color:white;
+            }  */
+            /* div ul{
+                float: right;
+                /* margin-right: 40px; */
+
+            /* }
+            div li{
+                display: inline-block;
+                margin: 0 8px;
+                line-height: 80px;
+            }
+            div a{
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+                border: 1px solid transparent;
+                padding: 7px 10px;
+                border-radius: 3px; */ 
+            /* } */        
+            #head{
+               background-color:darkcyan;
+               text-align: center;
+               font-size: 30px;
+               height:30px;
+            }
+            .hovertext{
+                position:relative;
+                
+            }
+            .hovertext:before{
+                content:attr(data-hover);
+                visibility:hidden;
+                opacity: 0;
+                background-color:black;
+                color: #fff;
+                text-align:center;
+                border-radius: 5px;
+                padding:5px 0;
+                transition: opacity 1s ease-in-out;
+                position: absolute;
+                z-index:1;
+                left: 0;
+                top:150%;
+            }
+            .hovertext:hover:before{
+                opacity:1;
+                visibility:visible;
+            }
+            #profileImage{
+                height:70px;
+                width:70px;
+                border-radius: 50%;
+                float:left,center;
+                padding-top:5px; 
+
+            }
+            #profileImage:hover{
+                cursor: pointer;
+                opacity:0;
+            }
+            .menu-bar{
+                background:darkcyan;
+                text-align:center;
+                font-size: 20px;
+                height:80px;
+
+            }
+            .menu-bar ul{
+                display:inline-flex;
+                list-style: none;
+                color:white;
+            }
+            .menu-bar ul li{
+                z-index: 999;
+                width:150px;
+                margin:20px;
+                padding:10px;
+            }
+            .menu-bar ul li a{
+                text-decoration: none;
+                color:#fff;
+            }
+            .menu-bar ul li:hover{
+                background:rgb(2, 71, 71);
+                border-radius:2px;
+
+            }
+            .menu-bar .fa{
+                margin-right: -8px;
+            }
+            .sub-menu-0
+            {
+                display: none;
+            }
+            .menu-bar ul li:hover .sub-menu-0{
+                display: block;
+                position: absolute;
+                background:transparent;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+            .menu-bar ul li:hover .sub-menu-0 ul{
+                 display:block;
+                 margin:4px;
+                 background:darkcyan;
+                 overflow: visible;
+            }
+            .menu-bar ul li:hover .sub-menu-0 ul li {
+                width: 150px;
+                padding: 7px;
+                border-bottom: 1px dotted #fff;
+                background:darkcyan;
+                border-radius: 0;
+                text-align: left;
+            }
+            .menu-bar ul li:hover .sub-menu-0 ul li:last child {
+                     border-bottom:none;
+            }
+            .menu-bar ul li:hover .sub-menu-0 ul li a:hover {
+                 color: rgba(255, 255, 255, 0.74);
+            }
+            .sub-menu-1
+            {
+                display: none;
+            }
+            .menu-bar ul li:hover .sub-menu-1{
+                display: block;
+                position: absolute;
+                background:darkcyan;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+            .menu-bar ul li:hover .sub-menu-1 ul{
+                 display:block;
+                 margin:10px;
+            }
+            .menu-bar ul li:hover .sub-menu-1 ul li {
+                width: 150px;
+                padding: 10px;
+                border-bottom: 1px dotted whitesmoke;
+                background: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+            .menu-bar ul li:hover .sub-menu-1 ul li:last child {
+                     border-bottom:none;
+            }
+            .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+                 color: white;
+            }
+            .fa-angle-right
+            {
+                float: right;
+            }
+            .sub-menu-2 {
+                display: none;
+            } 
+            .hover-me:hover  .sub-menu-2{
+                position: absolute;
+                display: block;
+                margin-top: -40px;
+                margin-left: 140px;
+                background:darkcyan;
+            }
+            #footer{
+background-color:darkcyan;
+width:100%;
+height:40px;
+color:white;
+text-align:center;
+font-style: bold;
+padding:2px;
+position:fixed;
+bottom:0px;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.foot{
+      display:flex;
+      justify-content:space-around;
+    }
+    .foot .view{
+      float:right;
+    }
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+ </style>
+    </head>
+    <body>
+     <nav id="total">
+      <div class="navbar">
+            <div id="head"><big><b>My Website</b></big></div>
+            <div class="menu-bar">
+                <span class="hovertext" data-hover="LAVANYA">
+                    <image id="profileImage" src="WhatsApp Image 2022-07-10 at 10.00.15 PM(1).jpeg" alt="LAVANYA">
+                </span>&nbsp;
+            <ul>
+                <li><a class="active" href="my website.html">Home&nbsp;<i class="fa fa-home"></i></a></li>
+                <li><a href="#">Exam &nbsp;<i class="fa fa-book"></i></a>
+                <div class="sub-menu-0">
+                    <ul>
+                        <li><a href="loginE.html">login</a></li>
+                        <li><a href="register.html">register</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                <li><a href="#">Branch<i class="fa fa-wrench"></i></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">ECE</a></li>
+                        <li><a href="#">MECH</a></li>
+                        <li class="hover-me"><a href="#">CSE&nbsp;</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="student.html">Faculty</a></li>
+                                    <li><a href="student.html">Student</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="contactmap.html">contact &nbsp;<i class="fa fa-phone"></i></a></li>
+                <li><a href="about us.html">Aboutus<i class="fa fa-user"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+        <div class="container">
+            <h1>RESUME</h1>
+            <h3>Personal Profile</h3>
+            <img src="WhatsApp Image 2022-07-10 at 10.00.15 PM(1).jpeg" alt="profile-picture" border="0" /></a>
+            <h4>About Me</h4>
+            <p>Hi, I'm Guturu Lavanya, I am pursing B.tech 2nd year in RGUKT,nuzvid.</p>
+            <h4>My Hobbies</h4>
+            <div class="listFlex">
+               <div>
+                  <ul>
+                     <li>Drawing</li>
+                     <li>listening songs</li>
+                     <li>Reading books</li>
+                     <li>Dancing</li>
+                  </ul>
+               </div>
+            </div>
+            <h4>Favourite Subjects</h4>
+            <div class="listFlex">
+                <div>
+                   <ul>
+                      <li>Data structures</li>
+                      <li>web technologies</li>
+                   </ul>
+                </div>
+             </div>
+            <p>This was my simple resume...bye bye..</p>
+            </div>
+    <footer id="footer">
+        <div class="foot">
+          <small><p><b>copy right &copy;2022 designed and developed by LAVANYA</b></p></small>
+      <bold class="view">View Count:</bold>
+        <img class="view" src="https://hitwebcounter.com/counter/counter.php?page=8012171&style=0006&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0"/>
+    </div>
+        </footer>
+    </body>
+</script>
+<SCRIPT>
+var filter=document.getElementById("search");
+filter.addEventListener('keyup',searchItem,false);
+function searchItem(e)
+{
+    var text=e.target.value.toLowerCase();
+    var items=document.getElementsByTagName("li");
+    Array.from(items).forEach((item)=>
+    {
+        itemValue=item.firstChild.textContent;
+        if(itemValue.toLowerCase().indexOf(text)!=-1){
+            item.style.display="block"; 
+        }
+        else{
+            item.style.display="none";
+        }
+    } )}</script>
+</html>
